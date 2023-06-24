@@ -8,18 +8,69 @@
 @import url('./vite-promo.css');
 @import url('./header.css');
 
+@import url('../css/subscribe.css');
+@import url('../css/overlay-form-new-chocolate.css');
+
+@import url('../css/header.css');
+@import url('../css/hero.css');
+@import url('../css/advanteges.css');
+@import url('../css/unique-components.css');
+@import url('../css/how-its-made.css');
+@import url('../css/our-products.css');
+@import url('../css/top-sellers.css');
+@import url('../css/review.css');
+@import url('../css/subscribe.css');
+@import url('../css/footer.css');
+@import url('../css/overlay-form-order.css');
+@import url('../css/overlay-form-review.css');
+@import url('../css/overlay-form-new-chocolate.css');
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --main-font-family: 'Montserrat', sans-serif;
+  --accent-color: #fd9222;
+  --primary-text-color-theme-dark: #ffffff;
+  --primary-text-color-theme-light: #111111;
+  --hover-buttons-color: #fcf1e0;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+body {
+  font-family: var(--main-font-family);
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.container {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
