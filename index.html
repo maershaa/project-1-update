@@ -1,196 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/project-1-update/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    
-    <script type="module" crossorigin src="/project-1-update/assets/index-c45ada6b.js"></script>
-    <link rel="stylesheet" href="/project-1-update/assets/index-10c40100.css">
-  </head>
-  <body>
-    <header class="header-container container">
-  <div class="header-mobile">
-    <a href="./index.html" class="logo-header link">
-      <div class="logo-units">
-        <span class="simply-logo">Simply </span>Chocolate
-      </div>
 
-      <svg class="mobile-logo-icon" width="21" height="21">
-        <use href="./images/sprite.svg#icon-chocolate-logo"></use>
-      </svg>
-    </a>
-    <nav>
-      <ul class="desktop-menu-list-header list">
-        <li class="mobile-menu-item">
-          <a href="./index.html" class="link"> Home</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="#how-it’s-made" class="link">How it's made&#63;</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="#our-products" class="link"> Our products</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="#top-sellers" class="link"> Top sellers</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="#review" class="link"> Chocolate is loved</a>
-        </li>
-      </ul>
-    </nav>
-    <ul class="desktop-social-list-header list">
-      <li class="social-list-item-header">
-        <a
-          href="https://www.instagram.com
-                "
-          class="social-link-mobile"
-        >
-          <svg class="social-icon-mobile-menu">
-            <use href="./images/sprite.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social-list-item-header">
-        <a
-          href="https://www.twitter.com
-                "
-          class="social-link-mobile"
-        >
-          <svg class="social-icon-mobile-menu">
-            <use href="./images/sprite.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <button
-      type="button"
-      class="button-mobile-menu js-open-menu menu-toggle"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
-    >
-      <svg class="mobile-menu-icon" width="28" height="28">
-        <use href="./images/sprite.svg#icon-menu-mobile"></use>
-      </svg>
-      <svg class="tablet-menu-icon" width="32" height="32">
-        <use href="./images/sprite.svg#icon-menu-table"></use>
-      </svg>
-    </button>
-  </div>
-  <!-- Mobile menu -->
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button
-      type="button"
-      class="close-mobile-menu-btn js-close-menu menu-toggle"
-    >
-      <svg class="icon-close-button">
-        <use href="./images/sprite.svg#icon-close-button"></use>
-      </svg>
-    </button>
-    <nav>
-      <ul class="mobile-menu-list list">
-        <li class="mobile-menu-item">
-          <a href="index.html" class="link"> Home</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="#how-it’s-made" class="link">How it's made&#63;</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="#our-products" class="link"> Our products</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="#top-sellers" class="link"> Top sellers</a>
-        </li>
-        <li class="mobile-menu-item">
-          <a href="#review" class="link"> Chocolate is loved</a>
-        </li>
-      </ul>
-    </nav>
-    <ul class="mobile-social-list list">
-      <li class="social-list-item-header">
-        <a
-          href="https://www.instagram.com
-                "
-          class="social-link-mobile"
-        >
-          <svg class="social-icon-mobile-menu">
-            <use href="./images/sprite.svg#icon-instagram"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social-list-item-header">
-        <a
-          href="https://www.twitter.com
-                "
-          class="social-link-mobile"
-        >
-          <svg class="social-icon-mobile-menu">
-            <use href="./images/sprite.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-  </div>
-</header>
+  <title>Vanilla App Template</title>
+  <link rel="icon" type="image/svg+xml" href="/project-1-update/favicon.svg" />
 
+  
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/project-1-update/assets/javascript-8dac5379.svg" alt="" />
-    </section>
+  <!-- Подключаем шрифт -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
+  <!-- Подключаем нормализатор -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
 
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
+  <script type="module" crossorigin src="/project-1-update/assets/index-64e61d0f.js"></script>
+  <link rel="stylesheet" href="/project-1-update/assets/index-93da9742.css">
+</head>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/project-1-update/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
-  </div>
-</section>
+<body>
+  <include src="./partials/header.html"></include>
 
+  <main>
+    <include src="./partials/hero.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/unique-components.html"></include>
+    <include src="./partials/how-its-made.html"></include>
+    <include src="./partials/our-products.html"></include>
+    <include src="./partials/top-sellers.html"></include>
+    <include src="./partials/reviews.html"></include>
+    <include src="./partials/subscribe.html"></include>
+  </main>
 
-    
-  </body>
+  <include src="./partials/footer.html"></include>
+
+  <include src="./partials/overlay-form-order.html"></include>
+  <include src="./partials/overlay-form-review.html"></include>
+  <include src="./partials/overlay-form-new-chocolate.html"></include>
+
+  
+</body>
+
 </html>
