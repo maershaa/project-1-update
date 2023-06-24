@@ -7,26 +7,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vanilla App Template</title>
   
-  <script type="module" crossorigin src="/project-1-update/assets/index-d8e80799.js"></script>
-  <link rel="stylesheet" href="/project-1-update/assets/index-a5ca5ae8.css">
+  <script type="module" crossorigin src="/project-1-update/assets/index-84838573.js"></script>
+  <link rel="stylesheet" href="/project-1-update/assets/index-648612f4.css">
 </head>
 
 <body>
   <!-- Yana Bytkova -->
-  <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
+  <header class="header-container container">
+  <div class="header-mobile">
+    <a href="./index.html" class="logo-header link">
+      <div class="logo-units">
+        <span class="simply-logo">Simply </span>Chocolate
+      </div>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
+      <svg class="mobile-logo-icon" width="21" height="21">
+        <use href="./images/sprite.svg#icon-chocolate-logo"></use>
+      </svg>
+    </a>
+    <nav>
+      <ul class="desktop-menu-list-header list">
+        <li class="mobile-menu-item">
+          <a href="./index.html" class="link"> Home</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#how-it’s-made" class="link">How it's made&#63;</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#our-products" class="link"> Our products</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#top-sellers" class="link"> Top sellers</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#review" class="link"> Chocolate is loved</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="desktop-social-list-header list">
+      <li class="social-list-item-header">
+        <a href="https://www.instagram.com
+                " class="social-link-mobile">
+          <svg class="social-icon-mobile-menu">
+            <use href="./images/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list-item-header">
+        <a href="https://www.twitter.com
+                " class="social-link-mobile">
+          <svg class="social-icon-mobile-menu">
+            <use href="./images/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
       </li>
     </ul>
-  </nav>
-</header>
 
+    <button type="button" class="button-mobile-menu js-open-menu menu-toggle" aria-expanded="false"
+      aria-controls="mobile-menu">
+      <svg class="mobile-menu-icon" width="28" height="28">
+        <use href="./images/sprite.svg#icon-menu-mobile"></use>
+      </svg>
+      <svg class="tablet-menu-icon" width="32" height="32">
+        <use href="./images/sprite.svg#icon-menu-table"></use>
+      </svg>
+    </button>
+  </div>
+  <!-- Mobile menu -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button type="button" class="close-mobile-menu-btn js-close-menu menu-toggle">
+      <svg class="icon-close-button">
+        <use href="./images/sprite.svg#icon-close-button"></use>
+      </svg>
+    </button>
+    <nav>
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item">
+          <a href="index.html" class="link"> Home</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#how-it’s-made" class="link">How it's made&#63;</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#our-products" class="link"> Our products</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#top-sellers" class="link"> Top sellers</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a href="#review" class="link"> Chocolate is loved</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="mobile-social-list list">
+      <li class="social-list-item-header">
+        <a href="https://www.instagram.com
+                " class="social-link-mobile">
+          <svg class="social-icon-mobile-menu">
+            <use href="./images/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="social-list-item-header">
+        <a href="https://www.twitter.com
+                " class="social-link-mobile">
+          <svg class="social-icon-mobile-menu">
+            <use href="./images/sprite.svg#icon-twitter"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
 
   <main>
     <!-- Alina Zarutska -->
@@ -66,7 +157,57 @@
     </div>
 </section>
 
-    
+    <!-- Advantages -->
+<section class="section advantages-section ">
+    <div class="container advantages-container">
+        <h2 class="hidden-title" id="advantages">Advantages</h2>
+        <ul class="advantages-list list">
+            <li class="advantages-item">
+                <div class="advantages-icon">
+                    <svg class="advantages-icon-item">
+                        <use href="/src/images/sprite.svg#icon-advantages-chocolate" width="28" height="28"></use>
+                    </svg>
+                </div>
+                <h3 class="advantages-title">Unsurpassed taste</h3>
+                <p class="advantages-text">
+                    Crafted with the finest quality cocoa beans and a dedication to
+                    perfection, each bite is a decadent experience that simply cannot be
+                    matched. Savor the richness and complexity of our Unsurpassed Taste
+                    and discover a new level of chocolate bliss.
+                </p>
+            </li>
+            <li class="advantages-item">
+                <div class="advantages-icon">
+                    <svg class="advantages-icon-item">
+                        <use href="/src/images/sprite.svg#icon-advantages-dollar" width="28" height="28"></use>
+                    </svg>
+                </div>
+                <h3 class="advantages-title">Affordable price</h3>
+                <p class="advantages-text">
+                    Indulge in high-quality chocolate without breaking the bank with
+                    Simply Chocolate's selection of affordable treats. Enjoy
+                    mouth-watering truffles and velvety chocolate bars without sacrificing
+                    taste or quality. Browse our selection and indulge in affordable
+                    luxury today.
+                </p>
+            </li>
+            <li class="advantages-item">
+                <div class="advantages-icon">
+                    <svg class="advantages-icon-item">
+                        <use href="/src/images/sprite.svg#icon-advantages-utensil-spoon" width="28" height="28"></use>
+                    </svg>
+                </div>
+                <h3 class="advantages-title">Own production</h3>
+                <p class="advantages-text">
+                    We take pride in our own production process, ensuring that every step
+                    is carefully crafted to perfection. From selecting the finest
+                    ingredients to handcrafting each piece, our attention to detail is
+                    evident in every bite.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
 
     <!-- Valeria Maers -->
     <section class="unique_components">
@@ -243,18 +384,602 @@
         </ul>
     </div>
 </section>
-    
-    
-    
-    
-    
+    <section class="how-its-made-section" id="how-it’s-made">
+    <div class="container">
+        <h2 class="how-its-made-heading">
+            HOW IT’S <span class="how-its-made-heading-end">MADE?</span>
+        </h2>
+        <div class="how-its-made-flex-container">
+            <!-- <picture class="how-its-made-picture">
+        <source
+          srcset="
+            ./images/how-its-made-section/how-its-made-image-desktop.jpg    1x,
+            ./images/how-its-made-section/how-its-made-image-desktop@2x.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/how-its-made-section/how-its-made-image-tablet.jpg    1x,
+            ./images/how-its-made-section/how-its-made-image-tablet@2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+
+        <source
+          srcset="
+            ./images/how-its-made-section/how-its-made-image-mobile.jpg    1x,
+            ./images/how-its-made-section/how-its-made-image-mobile@2x.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+
+        <img
+          class="how-its-made-image"
+          src="./images/how-its-made-section/how-its-made-image-mobile.jpg"
+          alt="Cooking chocolate"
+        />
+      </picture> -->
+
+            <!-- <div class="how-its-made-video-thumb">
+        <div class="how-its-made-video-thumb-fade"></div>
+        <video
+          class="how-its-made-video"
+          width="100%"
+          height="100%"
+          autoplay
+          preload="auto"
+          muted
+          loop
+          src="./videos/chocolate.mp4"
+          poster="./images/how-its-made-section/how-its-made-image-desktop.jpg"
+        ></video>
+      </div> -->
+
+            <div class="how-its-made-video-thumb">
+                <div class="how-its-made-video-thumb-fade"></div>
+                <iframe class="how-its-made-video" width="100%" height="100%"
+                    src="https://www.youtube.com/embed/Jw0DXZIywdI"
+                    title="HOMEMADE CHOCOLATE BAR RECIPE l WITH BUTTER l WITHOUT COCONUT OIL or COCOA BUTTER"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+
+            <div class="how-its-made-list-container">
+                <p class="how-its-made-list-name">
+                    Try our chocolates today and discover the perfect balance of flavor
+                </p>
+                <ul class="list">
+                    <li class="how-its-made-item">
+                        Heat the milk in a saucepan without bringing it to a boil. Add sugar
+                        and cocoa powder.
+                    </li>
+                    <li class="how-its-made-item">
+                        At the same time, prepare a water bath. Melt the butter on it.
+                    </li>
+                    <li class="how-its-made-item">
+                        "Mix" the milk mixture and already liquid butter. Mix thoroughly
+                        with a silicone spatula so that the mass becomes uniform and silky.
+                    </li>
+                    <li class="how-its-made-item">
+                        Heat the mixture over low heat, letting it barely boil.
+                    </li>
+                    <li class="how-its-made-item">
+                        Pour the chocolate into special containers (can be replaced with ice
+                        molds). Allow to cool and harden.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Anton Khomenko -->
+<section id="our-products" class="our-products">
+    <div class="our-products-container container">
+        <h2 class="our-products-title">
+            Our <span class="our-products-title-part2">products</span>
+        </h2>
+        <div class="swiper1">
+            <ul class="our-products-list swiper-wrapper">
+                <li class="our-products-item swiper-slide">
+                    <img class="our-products-item-pic" srcset="
+              ./images/our-products/image1.webp    1x,
+              ./images/our-products/image1@2x.webp 2x
+            " src="./images/our-products/image1.webp" alt="orange chocolate" width="230" />
+                    <h3 class="our-products-item-title">orange</h3>
+                    <p class="our-products-item-text">Dark chocolate</p>
+                    <p class="our-products-item-price">45 UAH</p>
+                </li>
+                <li class="our-products-item swiper-slide">
+                    <img class="our-products-item-pic" srcset="
+              ./images/our-products/image2.webp    1x,
+              ./images/our-products/image2@2x.webp 2x
+            " src="./images/our-products/image2.webp" alt="apple and cranberry chocolate" width="230" />
+                    <h3 class="our-products-item-title">apple&cranberry</h3>
+                    <p class="our-products-item-text">Milk chocolate</p>
+                    <p class="our-products-item-price">50 UAH</p>
+                </li>
+                <li class="our-products-item swiper-slide">
+                    <img class="our-products-item-pic" srcset="
+              ./images/our-products/image3.webp    1x,
+              ./images/our-products/image3@2x.webp 2x
+            " src="./images/our-products/image3.webp" alt="lime and sea salt chocolate" width="230" />
+                    <h3 class="our-products-item-title">lime&sea salt</h3>
+                    <p class="our-products-item-text">Dark chocolate</p>
+                    <p class="our-products-item-price">66 UAH</p>
+                </li>
+                <li class="our-products-item swiper-slide">
+                    <img class="our-products-item-pic" srcset="
+              ./images/our-products/image4.webp    1x,
+              ./images/our-products/image4@2x.webp 2x
+            " src="./images/our-products/image4.webp" alt="pineapple chocolate" width="230" />
+                    <h3 class="our-products-item-title">pineapple</h3>
+                    <p class="our-products-item-text">Dark chocolate</p>
+                    <p class="our-products-item-price">54 UAH</p>
+                </li>
+                <li class="our-products-item swiper-slide">
+                    <img class="our-products-item-pic" srcset="
+              ./images/our-products/image5.webp    1x,
+              ./images/our-products/image5@2x.webp 2x
+            " src="./images/our-products/image5.webp" alt="classic milk chocolate" width="230" />
+                    <h3 class="our-products-item-title">Classic</h3>
+                    <p class="our-products-item-text">Milk chocolate</p>
+                    <p class="our-products-item-price">45 UAH</p>
+                </li>
+                <li class="our-products-item swiper-slide">
+                    <img class="our-products-item-pic" srcset="
+              ./images/our-products/image6.webp    1x,
+              ./images/our-products/image6@2x.webp 2x
+            " src="./images/our-products/image6.webp" alt="honey milk chocolate" width="230" />
+                    <h3 class="our-products-item-title">honey</h3>
+                    <p class="our-products-item-text">Milk chocolate</p>
+                    <p class="our-products-item-price">50 UAH</p>
+                </li>
+                <li class="our-products-item swiper-slide">
+                    <img class="our-products-item-pic" srcset="
+              ./images/our-products/image7.webp    1x,
+              ./images/our-products/image7@2x.webp 2x
+            " src="./images/our-products/image7.webp" alt="roasted winter fruit chocolate" width="230" />
+                    <h3 class="our-products-item-title">Roasted fruits</h3>
+                    <p class="our-products-item-text">Dark chocolate</p>
+                    <p class="our-products-item-price">66 UAH</p>
+                </li>
+                <li class="our-products-item swiper-slide">
+                    <img class="our-products-item-pic" srcset="
+              ./images/our-products/image8.webp    1x,
+              ./images/our-products/image8@2x.webp 2x
+            " src="./images/our-products/image8.webp" alt="classic white chocolate" width="230" />
+                    <h3 class="our-products-item-title">Classic</h3>
+                    <p class="our-products-item-text">White chocolate</p>
+                    <p class="our-products-item-price">54 UAH</p>
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- pagination -->
+
+        <!-- </div> -->
+    </div>
+</section>
+    <section class="top-sellers container" id="top-sellers">
+    <h3 class="top-sellers-title">
+        Top<span class="top-sellers-title-sellers"> Sellers</span>
+    </h3>
+    <ul class="top-sellers-images-list list">
+        <li class="top-sellers-image-item">
+            <picture>
+                <!----------desctop------------>
+                <source srcset="
+            ./images/top-sellers/desktop/top-sellers-desktop-1@1x.jpg 1x,
+            ./images/top-sellers/desktop/top-sellers-desktop-1@2x.jpg 2x
+          " media="(min-width: 1200px)" />
+                <source srcset="
+            ./images/top-sellers/desktop/top-sellers-desktop-1@1x.webp 1x,
+            ./images/top-sellers/desktop/top-sellers-desktop-1@2x.webp 2x
+          " media="(min-width: 1200px)" type="image/webp" />
+                <!---------------tablet---------->
+                <source srcset="
+            ./images/top-sellers/tablet/top-sellers-tablet-1@1x.jpg 1x,
+            ./images/top-sellers/tablet/top-sellers-tablet-1@2x.jpg 2x
+          " media="(min-width: 768px)" />
+                <source srcset="
+            ./images/top-sellers/tablet/top-sellers-tablet-1@1x.webp 1x,
+            ./images/top-sellers/tablet/top-sellers-tablet-1@2x.webp 2x
+          " media="(min-width: 768px)" type="image/webp" />
+                <!--------------mobile------------->
+                <source srcset="
+            ./images/top-sellers/mobile/top-sellers-mobile-1@1x.jpg 1x,
+            ./images/top-sellers/mobile/top-sellers-mobile-1@2x.jpg 2x
+          " media="(min-width: 320px)" />
+                <source srcset="
+            ./images/top-sellers/mobile/top-sellers-mobile-1@1x.webp 1x,
+            ./images/top-sellers/mobile/top-sellers-mobile-1@2x.webp 2x
+          " media="(min-width: 320px)" type="image/webp" />
+                <img class="top-sellers-img top-sellers-img-cofee"
+                    src="./images/top-sellers/mobile/top-sellers-mobile-1@1x.jpg" alt="nut, coffee and chocolate" />
+            </picture>
+            <p class="top-sellers-mobile-text">
+                Crazy enough chocolate originates from a bean just like the coffee bean
+                called Cacao. Cacao has been around for thousands of years and was first
+                discovered by the Native American tribe called the Mayans.
+            </p>
+        </li>
+        <li class="top-sellers-image-item">
+            <picture>
+                <!------------desctop----------->
+                <source srcset="
+            ./images/top-sellers/desktop/top-sellers-desktop-2@1x.jpg 1x,
+            ./images/top-sellers/desktop/top-sellers-desktop-2@2x.jpg 2x
+          " media="(min-width: 1200px)" />
+                <source srcset="
+            ./images/top-sellers/desktop/top-sellers-desktop-2@1x.webp 1x,
+            ./images/top-sellers/desktop/top-sellers-desktop-2@2x.webp 2x
+          " media="(min-width: 1200px)" type="image/webp" />
+                <!-----------------tablet------------>
+                <source srcset="
+            ./images/top-sellers/tablet/top-sellers-tablet-2@1x.jpg 1x,
+            ./images/top-sellers/tablet/top-sellers-tablet-2@2x.jpg 2x
+          " media="(min-width: 768px)" />
+                <source srcset="
+            ./images/top-sellers/tablet/top-sellers-tablet-2@1x.webp 1x,
+            ./images/top-sellers/tablet/top-sellers-tablet-2@2x.webp 2x
+          " media="(min-width: 768px)" type="image/webp" />
+                <!-----------mobile----------------->
+                <source srcset="
+            ./images/top-sellers/mobile/top-sellers-mobile-2@1x.jpg 1x,
+            ./images/top-sellers/mobile/top-sellers-mobile-2@2x.jpg 2x
+          " media="(min-width: 320px)" />
+                <source srcset="
+            ./images/top-sellers/mobile/top-sellers-mobile-2@1x.webp 1x,
+            ./images/top-sellers/mobile/top-sellers-mobile-2@2x.webp 2x
+          " media="(min-width: 320px)" type="image/webp" />
+                <img class="top-sellers-img" src="./images/top-sellers/mobile/top-sellers-mobile-2@1x.jpg"
+                    alt="chocolate bar 1" />
+            </picture>
+        </li>
+        <li class="top-sellers-image-item top-sellers-image-item-bar">
+            <img class="top-sellers-img" srcset="./images/top-sellers/desktop/top-sellers-desktop-3@2x.jpg 2x"
+                src="./images/top-sellers/desktop/top-sellers-desktop-3@1x.jpg" alt="chocolate bar 2" />
+        </li>
+    </ul>
+
+    <div class="info-button-container">
+        <p class="top-sellers-text">
+            Crazy enough chocolate originates from a bean just like the coffee bean
+            called Cacao. Cacao has been around for thousands of years and was first
+            discovered by the Native American tribe called the Mayans.
+        </p>
+        <button class="open-form-buy-button js-open-modal" data-modal="3" type="button">
+            Buy now
+        </button>
+    </div>
+</section>
+    <!-- <a href="#" class="js-open-modal" data-modal="2">Открыть окно 2</a> -->
+
+<section id="review" class="review">
+    <div class="swiper container">
+        <h2 class="review-title">
+            chocolate<span class="review-title-black"> is loved</span>
+        </h2>
+        <!-- Additional required wrapper -->
+        <ul class="review-list swiper-wrapper">
+            <!-- Slides -->
+            <li class="review-item swiper-slide">
+                <div class="review-card">
+                    <h3 class="review-card-name">Victoria Dobrzhanska</h3>
+                    <p class="review-card-text">
+                        I love this chocolate bar. Perfect combination of light crispy
+                        wafer, covered in a thin layer chocolate.
+                    </p>
+                </div>
+                <img class="review-card-img" srcset="
+            ./images/review/review1.webp    1x,
+            ./images/review/review1@2x.webp 2x
+          " src="./images/review/review1.webp" alt="girl with short cut of brown hair" />
+            </li>
+            <li class="review-item swiper-slide">
+                <div class="review-card">
+                    <h3 class="review-card-name">Nazar Babenko</h3>
+                    <p class="review-card-text">
+                        This chocolate confection is a delight! A delight! The wafer is
+                        light and crisp, the hazelnut cream is smooth, and the chocolate is
+                        good.
+                    </p>
+                </div>
+                <img class="review-card-img" srcset="
+            ./images/review/review2.webp    1x,
+            ./images/review/review2@2x.webp 2x
+          " src="./images/review/review2.webp" alt="serious man's looking in camera" />
+            </li>
+            <li class="review-item swiper-slide">
+                <div class="review-card">
+                    <h3 class="review-card-name">Nazar Babenko</h3>
+                    <p class="review-card-text">
+                        This chocolate confection is a delight! A delight! The wafer is
+                        light and crisp, the hazelnut cream is smooth, and the chocolate is
+                        good.
+                    </p>
+                </div>
+                <img class="review-card-img" srcset="
+            ./images/review/review3.webp    1x,
+            ./images/review/review3@2x.webp 2x
+          " src="./images/review/review3.webp" alt="girl standing in front os sundown" />
+            </li>
+            <li class="review-item swiper-slide">
+                <div class="review-card">
+                    <h3 class="review-card-name">Natalia Sus</h3>
+                    <p class="review-card-text">
+                        The chocolate assortment was delicious. Both dark and milk chocolate
+                        pieces were smooth and just right on the sweetness level.
+                    </p>
+                </div>
+                <img class="review-card-img" srcset="
+            ./images/review/review4.webp    1x,
+            ./images/review/review4@2x.webp 2x
+          " src="./images/review/review4.webp" alt="girl with frinkles" />
+            </li>
+            <li class="review-item swiper-slide">
+                <div class="review-card">
+                    <h3 class="review-card-name">Danilo Nottingham</h3>
+                    <p class="review-card-text">
+                        This is delicious. It so rich and flavorful you don’t need to use as
+                        many. I love topping an apple with almond butter and these chips for
+                        a snack.
+                    </p>
+                </div>
+                <img class="review-card-img" srcset="
+            ./images/review/review5.webp    1x,
+            ./images/review/review5@2x.webp 2x
+          " src="./images/review/review5.webp" alt="black and white photo of man" />
+            </li>
+            <li class="review-item swiper-slide">
+                <div class="review-card">
+                    <h3 class="review-card-name">Irina Tydnyuk</h3>
+                    <p class="review-card-text">
+                        This is simply the best chocolate around, and I'm just thrilled to
+                        support a local company! Best local chocolate - world class :)
+                    </p>
+                </div>
+                <img class="review-card-img" srcset="
+            ./images/review/review6.webp    1x,
+            ./images/review/review6@2x.webp 2x
+          " src="./images/review/review6.webp" alt="girl in walking" />
+            </li>
+        </ul>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <button class="review-buttom js-open-modal " type="button" data-modal="2">
+        Leave a review
+    </button>
+</section>
+    <!-- ===================subscribe-section=================== -->
+<section class="subscribe">
+    <div class="container">
+        <h2 class="subscribe-title">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+        <p class="subscribe-text">
+            From the velvety texture to the rich and complex flavor, our New Chocolate
+            is a true indulgence that will leave you craving more. Made with only the
+            finest ingredients and handcrafted with the utmost care, each piece is a
+            work of art that is sure to please.
+        </p>
+        <button type="submit" class="subscribe-btn js-open-modal" data-modal="1">
+            Subscribe
+        </button>
+    </div>
+</section>
   </main>
 
-  
+  <footer class="section-footer">
+    <div class="footer-wrapper container">
+        <div class="footer-social-address-tablet">
+            <p class="footer-paragraph">
+                <span class="footer-paragraph-orange">Chocolate</span>
+                a delicious cure for a bad day
+            </p>
 
-  
-  
-  
+            <div class="footer-social-address-container">
+                <div class="footer-social-container">
+                    <h4 class="footer-title">Contact us</h4>
+
+                    <ul class="footer-social list">
+                        <li>
+                            <a class="footer-social-link" href="https://www.instagram.com">
+                                <svg class="footer-social-item">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="footer-social-link" href="https://www.twitter.com">
+                                <svg class="footer-social-item">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <address class="address">
+                    <ul class="list">
+                        <li class="address-item">
+                            <a class="address-link link" href="tel:+380684439426">+380 (68) 443-94-26</a>
+                        </li>
+
+                        <li class="address-item">
+                            <a class="address-link link" href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+        </div>
+
+        <nav class="footer-nav">
+            <ul class="footer-nav-list list">
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link link" href="./index.html">Home</a>
+                </li>
+
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link link" href="#how-it’s-made">How it&#39;s made?</a>
+                </li>
+
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link link" href="#our-products">Our products</a>
+                </li>
+
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link link" href="#top-sellers">Top sellers</a>
+                </li>
+
+                <li class="footer-nav-item">
+                    <a class="footer-nav-link link" href="#review">Chocolate is loved</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+  <div class="order-buy-backdrop overlay js-overlay-modal">
+    <div class="order-buy modal" data-modal="3">
+        <button class="close-order-buy-button" type="button">
+            <svg class="close-order-buy-button-icon js-modal-close" width="14" height="14">
+                <use href="./images/top-sellers/spite.svg#icon-close-modal"></use>
+            </svg>
+        </button>
+        <h3 class="order-buy-title">
+            bUY <span class="order-buy-title-now">nOW</span>
+        </h3>
+        <ul class="order-buy-list list">
+            <li class="order-buy-item">
+                <img class="order-buy-img" src="./images/top-sellers/order-buy-1.jpg" alt="chocolate" width="120"
+                    height="107" />
+                <p class="order-buy-text">100 g</p>
+            </li>
+            <li class="order-buy-item">
+                <img class="order-buy-img" src="./images/top-sellers/order-buy-2.jpg" alt="chocolate" width="120"
+                    height="107" />
+                <p class="order-buy-text">200 g</p>
+            </li>
+            <li class="order-buy-item">
+                <img class="order-buy-img" src="./images/top-sellers/order-buy-3.jpg" alt="chocolate" width="120"
+                    height="107" />
+                <p class="order-buy-text">300 g</p>
+            </li>
+        </ul>
+        <form class="contact-form">
+            <div class="contact-fom-wrapper">
+                <label class="contact-form-field-descr" for="user-name">
+                    <span class="contact-form-descr-wrapper">Personal information</span></label>
+                <div class="user-name-input-wrapper">
+                    <input class="contact-form-input contact-form-input-name" type="text" id="user-name"
+                        name="user-name" required pattern="[a-zA-Zа-яА-Яі-Ії-Їґ-Ґє-Є']+" placeholder="Name" />
+
+                    <input class="contact-form-input contact-form-input-surname" type="text" id="user-surname"
+                        name="user-surname" required pattern="[a-zA-Zа-яА-Яі-Ії-Їґ-Ґє-Є']+" placeholder="Surname" />
+                </div>
+            </div>
+            <div class="contact-fom-wrapper">
+                <label class="contact-form-field-descr" for="user-email">Email</label>
+                <div class="input-wrapper">
+                    <input class="contact-form-input" id="user-email" type="email" name="user-email" required
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Enter your email" />
+                </div>
+            </div>
+            <div class="contact-fom-wrapper">
+                <label class="contact-form-field-descr" for="user-tel">Phone number</label>
+                <div class="input-wrapper">
+                    <input class="contact-form-input contact-form-input-tell" id="user-tel" type="tel" name="user-tel"
+                        required pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xx-xxx-xx-xx"
+                        placeholder="Phone number" />
+                    <div class="country-code-container">
+                        <svg class="code-img" aria-label="flag of Ukraine" width="32" height="24">
+                            <use href="./images/top-sellers/spite.svg#icon-Frame"></use>
+                        </svg>
+                        <p class="phone-code">+380</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-fom-wrapper">
+                <label class="contact-form-field-descr" for="user-card">Card number</label>
+                <div class="input-wrapper">
+                    <input class="contact-form-input" id="user-card" type="text" name="user-card"
+                        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" title="xxxx-xxxx-xxxx-xxxx"
+                        placeholder="Enter card" required />
+                    <svg class="mastercard-icon" aria-label="mastercard logo" width="44" height="30">
+                        <use href="./images/top-sellers/spite.svg#icon-Mastercard"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="contact-fom-wrapper">
+                <label class="contact-form-field-descr" for="user-comment">Comment</label>
+                <div class="input-wrapper">
+                    <textarea class="contact-form-message" id="user-comment" name="user-comment"
+                        placeholder="Enter text" required></textarea>
+                </div>
+            </div>
+            <button class="form-send-button" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+  <div class="review-backdrop overlay js-overlay-modal"></div>
+<div class="review-modal modal" data-modal="2">
+    <button class="review-button-close js-modal-close" type="button">
+        <svg class="review-button-close-icon">
+            <use href="./images/sprite.svg#icon-close-icon"></use>
+        </svg>
+    </button>
+    <h4 class="review-modal-title">
+        LEAVE A REVIEW ABOUT
+        <span class="review-modal-title-org">OUR CHOCOLATE</span>
+    </h4>
+    <form class="review-modal-form">
+        <div class="review-modal-field">
+            <label class="review-input-wrap">
+                <input class="review-modal-input" type="text" name="text" pattern="^[A-Za-zА-Яа-яЁё]{1,32}+ required"
+                    placeholder="Name" required />
+            </label>
+            <label class="review-input-wrap">
+                <input class="review-modal-input" type="email" name="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Enter your email" required />
+            </label>
+            <label class="review-input-wrap">
+                <input class="review-modal-input tel" type="tel" name="phone_nimber" pattern="[0-9]{2}[0-9]{3}[0-9]{4}"
+                    placeholder="Phone number" required />
+                <svg class="review-modal-input-icon">
+                    <use href="./images/sprite.svg#icon-flag"></use>
+                </svg>
+                <span class="review-modal-input-tel">+380</span>
+            </label>
+        </div>
+        <label class="review-modal-field">
+            <textarea class="review-modal-textarea" id="user-comment-review" name="user-comment-review"
+                placeholder="Enter text" required></textarea>
+        </label>
+        <button class="review-modal-button" type="submit">Send</button>
+    </form>
+</div>
+  <!-- ===================subscribe-modal=================== -->
+<div class="subscribe-backdrop overlay js-overlay-modal"></div>
+<div class="subscribe-modal modal" data-modal="1">
+    <button type="button" class="sabscribe-modal-close-btn js-modal-close">
+        <svg class="sabscribe-modal-close-icone" width="24" height="24">
+            <use href="./images/sprite.svg#icon-close-button"></use>
+        </svg>
+    </button>
+    <h2 class="subscribe-modal-title">
+        Explore our<span class="subscribe-modal-title-color">new chocolate</span>
+        first!
+    </h2>
+    <form class="subscribe-form">
+        <label class="subscribe-form-field-wrapper"><input class="subscribe-form-input" type="email" name="user_email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter your email" required /></label>
+
+        <button type="submit" class="subscribe-form-btn">Submit</button>
+    </form>
+</div>
 
   
 </body>
