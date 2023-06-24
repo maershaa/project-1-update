@@ -20,17 +20,91 @@
 @import url('../css/overlay-form-new-chocolate.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  --main-font-family: 'Montserrat', sans-serif;
+  --accent-color: #fd9222;
+  --primary-text-color-theme-dark: #ffffff;
+  --primary-text-color-theme-light: #111111;
+  --hover-buttons-color: #fcf1e0;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+html {
+  scroll-behavior: smooth;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  background: #fafafa;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: var(--main-font-family);
+}
+
+.container {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 375px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
